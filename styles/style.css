@@ -1,0 +1,661 @@
+/* font family */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Work Sans", sans-serif;
+}
+body{
+    margin: 50px;
+}
+/* common variable style */
+.text-logo-color{
+    color: #FF5400;
+}
+.text-measures{
+    font-size: 1.75rem;
+    color: #131318;
+    font-weight: 700;
+}
+/* logo and title styles */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-logo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+nav img{
+    width: 50px;
+    height: 50px;
+}
+nav > ul{
+    display: flex;
+    gap: 30px;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #727272;
+    font-size: 18px;
+    font-weight: bold;
+}
+/* banner styles */
+.banner{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(../Images/group\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 0px 80px;
+    margin: 60px 0px;
+}
+.banner-title{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+}
+.banner-description{
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    position: absolute;
+    top: 65%;
+    left: 25%;
+}
+/* banner-menu-bars */
+.banner-menu-bars{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    padding: 30px;
+    position: absolute;
+    top: 80%;
+    left: 25%;
+    width: calc(100% - 50%);
+}
+.button-content-bar{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.button-content-bar button{
+    background-color: white;
+    color: #727272;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.75s;
+}
+.button-content-bar button:hover{
+    transform: scale(1) translate(0px, -10px);
+    background-color: red;
+    color: #fff;
+}
+.btn, .btn-search{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn .btn-span{
+    margin-left: 20px;
+}
+#btn-search{
+    background-color: #FF5400;
+    color: #fff;
+    transition: transform 0.75s;
+}
+#btn-search:hover{
+    transform: scale(1) translate(0px, -10px);
+    background-color: rebeccapurple;
+    color: #fff;
+}
+.btn-search .btn-span-search{
+    margin-right: 20px;
+}
+/* popular tour style */
+.popular-tour{
+    margin-top: 100px;
+}
+.popular-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+.tour-div{
+    width: 580px;
+    height: 520px;
+}
+.tour-div h2, .destination-content h2{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #131318;
+    margin-bottom: 50px;
+}
+.tour-div p, ul li, .destination-content p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #727272;
+    margin-bottom: 20px;
+}
+.btn-read{
+    background-color: #FF5400;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+/* destination style */
+.destination-container{
+    margin-top: 120px;
+}
+.destination-content{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.destination-content h2{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #131318;
+    margin-bottom: 20px;
+}
+.destination-content p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #727272;
+}
+/* destination images styles */
+.destination-img-row1, .destination-img-row2, .destination-img-row3{
+    display: flex;
+    gap: 20px;
+    margin: 30px 50px;
+    width: 500px;
+}
+.mal-title{
+    position: absolute;
+    color: #fff;
+    font-size: 30px;
+    left: 25%;
+    top: 280%;
+}
+.indo-title{
+    position: absolute;
+    color: #fff;
+    font-size: 30px;
+    right: 22%;
+    top: 280%;
+}
+.sri-title{
+    position: absolute;
+    color: #fff;
+    font-size: 30px;
+    left: 17%;
+    top: 330%;
+}
+.nor-title{
+    position: absolute;
+    color: #fff;
+    font-size: 30px;
+    left: 47%;
+    top: 330%;
+}
+.kas-title{
+    position: absolute;
+    color: #fff;
+    font-size: 30px;
+    right: 12%;
+    top: 330%;
+}
+.ban-title{
+    position: absolute;
+    color: #fff;
+    font-size: 30px;
+    left: 20%;
+    top: 380%;
+}
+.band-title{
+    position: absolute;
+    color: #fff;
+    font-size: 30px;
+    right: 25%;
+    top: 380%;
+}
+/* choose container style */
+.choose-us-container{
+    margin-top: 120px;
+}
+.choose-h2-title, .discount-title{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #131318;
+    text-align: center;
+}
+.choose-p-description, .discount-description{
+    font-size: 16px;
+    font-weight: 500;
+    color: #727272;
+    text-align: center;
+    margin-bottom: 50px;
+}
+/* choose section style */
+.choose-us-row{
+    display: flex;
+    gap: 20px;
+}
+.choose-us-row1{
+    background-color: #fef9f3;
+    border: 1px solid #fce5c9;
+    border-radius: 5px;
+    padding: 30px;
+}
+#hotel-pic{
+    width: 100px;
+    height: 60px;
+}
+.choose-title, .perfect-place-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #131318;
+}
+.choose-description, .perfect-place-description, .newsletter-description{
+    font-size: 14px;
+    font-weight: 500;
+    color: #727272;
+}
+.choose-us-row2{
+    background-color: #e3f9ff;
+    border: 1px solid #9fe8fc;
+    border-radius: 5px;
+    padding: 30px;
+}
+#map-pic{
+    width: 50px;
+    height: 50px;
+}
+#percent-pic{
+    width: 50px;
+    height: 50px;
+}
+.choose-us-row3{
+    width: 555px;
+    height: 210px;
+    background-color: #fbf3f3;
+    border: 1px solid #fbcece;
+    border-radius: 5px;
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    position: relative;
+    left: 25%;
+}
+/* discount banner style */
+.discount-container{
+    margin: 0px 50px;
+}
+.malaysia-content{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 450px;
+    height: 290px;
+    border-radius: 5px;
+    padding: 30px 40px;
+    position: relative;
+    top: -420px;
+    right: -50%;
+}
+.nav-clock, .nav-people, .nav-map{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-clock i, .nav-people i, .nav-map i{
+    color: #FF5400;
+}
+.nav-clock-days, .nav-people-text, .nav-map-malaysia{
+    margin-left: 10px;
+}
+.nav-malaysia-price{
+    color: #FF5400;
+    font-size: 18px;
+    font-weight: 700;
+}
+#btn-book{
+    background-color: #FF5400;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px; 
+    cursor: pointer;
+    margin-top: 10px;
+}
+/* malaysia banner-2 */
+.malaysia-banner-2 img{
+    transform: rotateY(180deg);
+    margin-top: -330px;
+}
+.malaysia-content-2{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 450px;
+    height: 290px;
+    border-radius: 5px;
+    padding: 30px 40px;
+    position: relative;
+    top: -420px;
+    left: 5%;
+}
+.malaysia-banner-3{
+    margin-top: -330px;
+}
+#btn-packages{
+    background-color: #FF5400;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px; 
+    cursor: pointer;
+    position: relative;
+    top: -320px;
+    left: 45%;
+}
+/* perfect place section */
+.perfect-place-container{
+    display: flex;
+    gap: 50px;
+}
+.perfect-place-content{
+    width: 600px;
+    height: 380px;
+    margin: 0px 50px;
+}
+.perfect-place-title, .perfect-place-description{
+    margin-bottom: 40px;
+}
+.perfect-place-list li{
+    font-size: 14px;
+    font-weight: 600;
+    color: #131318;
+    margin-bottom: 40px;
+}
+/* newsletter section style */
+.newsletter-container{
+    margin: 120px 80px;
+}
+.newsletter-content{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.newsletter-form{
+    border: 1px solid #FF5400;
+    border-radius: 5px;
+    width: 410px;
+    height: 380px;
+    padding: 30px;
+}
+.newsletter-title{
+    font-size: 22px;
+    font-weight: bold;
+    color: #131318;
+}
+.newsletter-hr{
+    opacity: 0.3;
+    margin-left: 0px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.name-field, .email-field{
+    border: none;
+    border-radius: 5px;
+    width: 350px;
+    padding: 20px 30px;
+    background-color: #efeded;
+    color: #131318;
+    margin-bottom: 20px;
+}
+.btn-subscribe{
+    width: 410px;
+}
+.newsletter-travel-img img{
+    width: 670px;
+    height: 445px;
+    position: relative;
+    top: 70px;
+}
+.travel-content{
+    background-color: #FF5400;
+    width: 280px;
+    height: 100px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    padding: 20px 5px;
+    position: relative;
+    left: 360px;
+    top: -135px;
+    transform: rotate(-25deg);
+}
+.travel-text{
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: -5px;
+    margin-top: 15px;
+}
+.travel-discount{
+    font-size: 1.50rem;
+    font-weight: 600;
+    color: #fff;
+}
+/* footer section style */
+.footer-container{
+    background-color: #ebe9e9;
+    text-align: center;
+    padding: 50px;
+}
+.footer-container .nav-logo {
+    justify-content: center;
+}
+.footer-description{
+    font-size: 14px;
+    font-weight: normal;
+    color:#727272 ;
+}
+.social-medias i{
+    margin-right: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.footer-hr{
+    width: 50%;
+    opacity: 0.3;
+    margin-top: 30px;
+}
+.footer-p{
+    color: #727272;
+    font-weight: 400;
+    margin-top: 30px;
+}
+/* media query for mobile phone */
+@media screen and (max-width: 576px) {
+    nav, nav > ul, .button-content-bar, .popular-container, .destination-img-row1, .destination-img-row2, .destination-img-row3, .choose-us-row{
+        flex-direction: column;
+    }
+    .banner{
+        height: 100%;
+    }
+    .banner-title {
+        font-size: 24px;
+        top: 0%;
+        left: 0%;
+        position: relative;
+        padding-top: 20px;
+    }
+    .banner-description{
+        font-size: 16px;
+        position: relative;
+        top: 0%;
+        left: 0%;
+    }
+    .banner-menu-bars{
+        position: relative;
+        top: 0%;
+        left: 0%;
+        width: calc(100% - 40%);
+    }
+    .tour-div{
+        width: 100%;
+        height: 100%;
+    }
+    .mountain-pic img{
+        width: 100%;
+    }
+    .destination-container {
+        margin-top: 0px;
+    }
+    .destination-img-row1, .destination-img-row2, .destination-img-row3{
+        width: 100%;
+        gap: 0px;
+        margin: 0px;
+    }
+    .mal-title{
+        position: relative;
+        color: #fff;
+        top: -140px;
+        left: 30%;
+    }
+    .indo-title{
+        position: relative;
+        color: #fff;
+        right: -25%;
+        top: -140px;
+    }
+    .sri-title{
+        position: relative;
+        color: #fff;
+        left: 25%;
+        top: -160px;
+    }
+    .nor-title {
+        position: relative;
+        color: #fff;
+        left: 15%;
+        top: -150px;
+    }
+    .kas-title {
+        position: relative;
+        color: #fff;
+        left: 30%;
+        top: -200px;
+    }
+    .ban-title {
+        position: relative;
+        color: #fff;
+        left: 20%;
+        top: -150px;
+    }
+    .band-title {
+        position: relative;
+        color: #fff;
+        left: 20%;
+        top: -130px;
+    }
+    .choose-us-row3 {
+        width: 80%;
+        height: 100%;
+        left: 0%;
+    }
+    .discount-container {
+        margin: 0px;
+    }
+    .malaysia-banner img, .malaysia-banner-2 img, .malaysia-banner-3 img {
+        width: 330px;
+        height: 400px;
+    }
+    .malaysia-content, .malaysia-content-2{
+        width: 90%;
+        height: 50%;
+        right: 0%;
+        top: -380px;
+        padding: 20px;
+    }
+    .malaysia-content-2{
+        left: 0%;
+    }
+    .malaysia-banner-3 img{
+        margin-top: 20px;
+    }
+    .malaysia-content nav{
+        flex-direction: row;
+        gap: 10px;
+    }
+    .choose-title{
+        font-size: 20px;
+    }
+    .choose-description, .nav-malaysia-price{
+        font-size: 12px;
+    }
+    #btn-book{
+        font-size: 10px;
+        font-weight: 300;
+        padding: 10px;
+    }
+    #btn-packages{
+        left: 25%;
+    }
+    .perfect-place-container{
+        flex-direction: column;
+        gap: 0px;
+        margin-top: -250px;
+    }
+    .perfect-place-content{
+        margin: 0px 0px 120px 0px;
+        width: 100%;
+    }
+    .perfect-place iframe{
+        width: 320px;
+        height: 280px;
+    }
+    .newsletter-content{
+        flex-direction: column;
+    }
+    .newsletter-form{
+        width: 320px;
+    }
+    .name-field, .email-field {
+        width: 280px;
+    }
+    .btn-subscribe{
+        width: 340px;
+    }
+    .newsletter-travel-img img{
+        width: 340px;
+    }
+    .travel-content{
+        width: 200px;
+        left:100px;
+        top: -100px;
+        padding: 10px;
+    }
+    .footer-container{
+        padding: 30px 20px;
+    }
+}
